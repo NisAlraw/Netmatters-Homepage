@@ -25,10 +25,10 @@
     <!--Header-->
     <header id="wrap-header">
 
-        <div id="hder1" class="container-reusable">
+        <div id="header1" class="container-reusable">
 
             <!--Logo-->
-            <div id="hder1--logo">
+            <div id="header1--logo">
 
                 <a href="#">
                     <img src="img/f-logo.webp" alt="Netmatters">
@@ -37,32 +37,36 @@
             </div>
 
             <!--Searchbar (Larger Screen Sizes)-->
-            <div id="hder1--actions">
-                <form id="hder1--searchform">
-                    <input id="hder1--searchform-input" type="text" placeholder="Search...">
-                    <button id="hder1--searchform-button" class="" type="submit">
+            <div id="header1--actions">
+                <form id="header1--searchform">
+                    <input id="header1--searchform-input" type="text" placeholder="Search...">
+                    <button id="header1--searchform-button" class="" type="submit">
                         <span class="search-icon"></span>
                     </button>
                 </form>
             </div>
 
             <!--Phone Icon-->
-            <div id="hder1--phone">
+            <div id="header1--phone">
                 <a href="#">
                     <span></span>
                 </a>
             </div>
 
             <!--Support + Contact Button-->
-            <div id="hder1-info--btn" class="btn btn-info">
-                <a id="hder-1--supportbtn">
-                    <span></span>
+            <div id="header1--buttons">
+                <a id="header1--supportbtn" href="#">
+                    <span class="icon-mouse"></span>
+                    Support
+                </a>
+                <a id="header1--contactbtn" href="#">
+                    <span class="icon-mail"></span>
                     Contact
                 </a>
             </div>
 
             <!--Burger Icon-->
-            <a id="hder1--bmenu">
+            <a id="header1--bmenu">
                 <div class="bmenu-box">
                     <button class="bmenu">
                         <div class="btop"></div>
@@ -74,6 +78,45 @@
 
         </div>
 
+        <!--Second row (Contains Searchbar for smaller screens)-->
+        <div id="header-2" class="container-reusable">
+            <form id="header2--searchform">
+                <label for="header2--searchform-input"></label>
+                <input id="header2--searchform-input" type="text" placeholder="Search..">
+                <button id="header2--searchform-button" class="" type="submit">
+                    <span class="icon-search"></span>
+                </button>
+            </form>
+
+        </div>
+
+        <!--Nav Bar (Coloured, 7x Links)-->
+        <div id="header-3" class="container-reusable">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-li" id="navmenu-software">
+                        <a href="#">
+                            <span id="nav-software" class="nav--li-icon icon-laptop"></span>
+                            <small>Bespoke</small>
+                            Software
+                        </a>
+                        <div id="submenu-software" class="nav--li-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="nav--submenu-item-container">
+                                            <span class="nav--submenu-item-icon f-cogs"></span>
+                                        </span>
+                                        <span class="nav--submenu-item">Bespoke CRM</span>
+                                    </a>
+                                </li>
+                                <!--Begin here-->
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
