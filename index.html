@@ -1,3 +1,8 @@
+<!--
+        Notes:
+Span placeholders = Icons
+-->
+
 <!DOCTYPE html>
 <html>
 
@@ -18,317 +23,171 @@
 
 <body>
 
-    <!--Page Wrap-->
-
-    <div id="wrap-page"></div>
-
-    <!--Header-->
-    <header id="wrap-header">
-
-        <div id="header1" class="container-reusable">
-
-            <!--Logo-->
-            <div id="header1--logo">
-
-                <a href="#">
-                    <img src="img/f-logo.webp" alt="Netmatters">
-                </a>
-
+<div class="page-wrap">
+    <div class="inner">
+        <div id="header-1" class="reusable-container">
+            <div id="netmatters-logo">
+                <picture>
+                    <span class="logo-padding">
+                        <span class="logo">
+                            <img src="img/f-logo.webp">
+                        </span>
+                    </span>
+                </picture>
             </div>
-
-            <!--Searchbar (Larger Screen Sizes)-->
-            <div id="header1--actions">
-                <form id="header1--searchform">
-                    <input id="header1--searchform-input" type="text" placeholder="Search...">
-                    <button id="header1--searchform-button" class="" type="submit">
-                        <span class="search-icon"></span>
-                    </button>
-                </form>
-            </div>
-
-            <!--Phone Icon-->
-            <div id="header1--phone">
-                <a href="#">
-                    <span></span>
-                </a>
-            </div>
-
-            <!--Support + Contact Button-->
-            <div id="header1--buttons">
-                <a id="header1--supportbtn" href="#">
-                    <span class="icon-mouse"></span>
-                    Support
-                </a>
-                <a id="header1--contactbtn" href="#">
-                    <span class="icon-mail"></span>
-                    Contact
-                </a>
-            </div>
-
-            <!--Burger Icon-->
-            <a id="header1--bmenu">
-                <div class="bmenu-box">
-                    <button class="bmenu">
-                        <div class="btop"></div>
-                        <div class="bmiddle"></div>
-                        <div class="bbottom"></div>
+            <div class="header-1__actions">
+                <div class="actions__support-btn hidden">
+                    <a href="#">
+                        <span></span>
+                        Support
+                    </a>
+                </div>
+                <div class="actions__contact-btn hidden">
+                    <a href="#">
+                        <span></span>
+                        Contact
+                    </a>
+                </div>
+                <div class="search-form__wrapper">
+                    <form method="GET" action="#" accept-charset="UTF-8" class="search-form">
+                        <label for="search-input" class="hidden">Search:</label>
+                        <input class="form-control search-bar" placeholder="search..." id="search-input" name="keyword" type="text">
+                        <button type="submit" class="btn" id="search-submit">
+                            <span></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="actions__contact-hidden hidden">
+                    <a class="phone" href="#">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="actions__burgermenu-btn">
+                    <button type="button" class="btn btn-primary hamburger">
+                        <span></span>
                     </button>
                 </div>
-            </a>
 
+            </div>
         </div>
 
-        <!--Second row (Contains Searchbar for smaller screens)-->
-        <div id="header-2" class="container-reusable">
-            <form id="header2--searchform">
-                <label for="header2--searchform-input"></label>
-                <input id="header2--searchform-input" type="text" placeholder="Search..">
-                <button id="header2--searchform-button" class="" type="submit">
-                    <span class="icon-search"></span>
-                </button>
-            </form>
-
-        </div>
-
-        <!--Nav Bar (Coloured, 7x Links)-->
-        <div id="header-3" class="container-reusable">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <!--Bespoke Software Nav-->
-                    <br><li class="nav-li" id="navmenu-software">
+        <div class="reusable-container main-nav nav hidden-sm hidden-xs">
+            <div class="container">
+                <ul>
+                    <li class="software nav-item">
                         <a href="#">
-                            <span id="nav-software" class="nav--li-icon icon-bs"></span>
-                            <small>Bespoke</small><br>
+                            <span class="icon-apps"></span>
+                            <small>Bespoke</small>
                             Software
                         </a>
-                        <div id="submenu-software" class="nav--li-submenu">
-                            <ul>
-                                <h3>Our Bespoke Software Services</h3>
-                                <li>
+                        <div class="sub-menu-banner">
+                            <ul class="container sub-menu">
+                                <li class="h2 sub-menu-banner__title">Our Bespoke Software Services</li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu-item-icon f-cogs"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon fa fa-cogs"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Bespoke CRM</span>
+                                        <span class="link-text">Bespoke CRM</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu--item-container">
-                                            <span class="nav--submenu-item-icon f-cogs"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon glyphicon glyphicon-briefcase"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Business Automation</span>
+                                        <span class="link-text">Business Automation</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon f-cogs"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon glyphicon glyphicon-random"></span>
                                         </span>
-                                        <span class="nav--submenu--item">Software Intergrations</span>
+                                        <span class="link-text">Software Intergrations</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon glyphicon glyphicon-phone"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Mobile App Development</span>
+                                        <span class="link-text">Mobile App Development</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon glyphicon glyphicon-folder-open"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Bespoke Databases</span>
+                                        <span class="link-text">Bespoke Databases</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon glyphicon glyphicon-transfer"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Sharepoint Development</span>
+                                        <span class="link-text">Sharepoint Development</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon glyphicon glyphicon-download"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Operational Systems</span>
+                                        <span class="link-text">Operations Systems</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon fa fa-users"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Business Central Implementation</span>
+                                        <span class="link-text">Business Central Implementation</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon fa fa-laptop"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Internet of Things (IoT) Software</span>
+                                        <span class="link-text">Internet of Things (IoT) Software</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon fa fa-cloud"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Intranet Development</span>
+                                        <span class="link-text">Intranet Development</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon fa fa-cloud-download"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Customer Portal Development</span>
+                                        <span class="link-text">Customer Portal Development</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-item nav-item__sub-menu">
                                     <a href="#">
-                                        <span class="nav--submenu-item-container">
-                                            <span class="nav--submenu--item-icon"></span>
+                                        <span class="link-icon-container">
+                                            <span class="link-icon fa fa-globe"></span>
                                         </span>
-                                        <span class="nav--submenu-item">Reporting Hub</span>
+                                        <span class="link-text">Reporting Hub</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <!--IT Nav-->
-                    <br><li class="nav-li" id="navmenu-it">
-                        <a href="#">
-                            <span id="nav-it" class="nav--li-icon icon-it"></span>
-                            <small>IT</small><br>
-                            Support
-                        </a>
-                    <div class="nav-li" id="submenu-it">
-                        <ul>
-                            <h3>Our IT Support Services</h3>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Managed IT Support</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">IT Consultancy</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Business IT Support</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Cloud Service Provider</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Office 365 for Business</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Data Backup &amp; Disaster Recovery</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Digital Marketing Nav-->
-                    <br><li class="nav-li" id="navmenu-dm">
-                        <a href="#">
-                            <span id="nav-it" class="nav--li-icon icon-dm"></span>
-                            <small>Digital</small><br>
-                            Marketing
-                        </a>
-                    <div class="nav-li" id="submenu-dm">
-                        <ul>
-                            <h3>Our Digital Marketing Services</h3>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Search Engine Optimisation (SEO)</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Email Marketing</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Pay Per Click Advertising (PPC)</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Social Media Marketing</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Conversion Rate Optimisation</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="nav--submenu-item-container">
-                                        <span class="nav--submenu--item-icon"></span>
-                                    </span>
-                                    <span class="nav--submenu-item">Content Marketing</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
                 </ul>
-            </nav>
+            </div>
         </div>
 
-    </header>
+    </div>
+</div>
 
 </body>
 
