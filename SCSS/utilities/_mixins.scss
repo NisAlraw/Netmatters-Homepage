@@ -1,0 +1,27 @@
+// Media Queries //--
+
+@mixin mq($breakpoint) {
+    @if $breakpoint == "x-small" {
+        @media (min-width: $break__xs) and (max-width: $break__sml) {
+            @content;
+        }
+    } @else if $breakpoint == "small" {
+        @media (min-width: #{$break__sml}) and (max-width: $break__med) {
+            @content;
+        }
+    } @else if $breakpoint == "medium" {
+        @media (min-width: #{$break__med}) {
+            @content;
+        }
+    } @else if $breakpoint == "large" {
+        @media (min-width: #{$break__l}) {
+            @content;
+        }
+    } @else if $breakpoint == "x-large" {
+        @media (min-width: #{$break__xl}) {
+            @content;
+        }
+    } @else {
+        @error "#{$breakpoint} is not a valid media query size!;"
+    }
+}
