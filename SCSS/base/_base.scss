@@ -1,3 +1,6 @@
+
+
+
 *,
 *::before,
 *::after{
@@ -11,6 +14,7 @@ body {
 
 body {
     color: #666;
+    margin: 0;
     font-size:1rem;
     font-family: "Poppins", sans-serif;
     letter-spacing:0.4px;
@@ -24,7 +28,7 @@ body {
     padding-left: 15px;
 }
 
-#container {
+#page-wrap {
     height: 100%;
     position: relative;
     overflow: hidden;

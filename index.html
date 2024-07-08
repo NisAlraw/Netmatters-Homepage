@@ -21,13 +21,26 @@ Span placeholders = Icons
 
     <!--Webfonts (WIP)-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5cbcf5da8c.js" crossorigin="anonymous"></script>
 
 
 </head>
 
 <body>
 
-<div class="page-wrap">
+<div id="page-wrap">
+
+    <div class="cookies">
+        <button class="manage-consent-btn btn" type="button">Manage Consent</button>
+        <div id="cookies-consent">
+            <div class="cookie-container">
+                <div class="cookie-title">
+                    <h3>Cookies Policy</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="inner">
         <div id="header-1" class="container">
             <div id="netmatters-logo">
@@ -42,13 +55,13 @@ Span placeholders = Icons
             <div class="header-1__actions">
                 <div class="actions__support-btn hidden">
                     <a href="#">
-                        <span></span>
+                        <span class="icon icon-mouse"></span>
                         Support
                     </a>
                 </div>
                 <div class="actions__contact-btn hidden">
                     <a href="#">
-                        <span></span>
+                        <span class="icon icon-paperplane"></span>
                         Contact
                     </a>
                 </div>
@@ -532,8 +545,50 @@ Span placeholders = Icons
                     </li>
                 </ul>
             </div>
+        
+        
+        
+        </div id=page-banner class="is-home">
+            <div class="static-banner">
+                <img src="img/Static-carousel.webp">
+            </div>
+            <div class="banner-content">
+                <div class="container banner--container-content">
+                    <div class="text">
+                        <div class="h1">
+                            The East Of England's Leading Technology Company
+                        </div>
+                        <p>
+                            Performance-driven digital and technology Services
+                            <br>
+                            with complete transparency
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-     </div>
+
+        <div class="middle">
+            <div class="container section">
+                <div class="cards-block">
+                    <div class="service list">
+                        <div class="row">
+                            <div class="services-header"> 
+                                <h2 class="h1">Our Services</h2>
+                                <h1>
+                                    <a class=h1 href="#">
+                                        View Our Work
+                                        <em class="icon-arrow-right"></em>
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    
+
         <!--Footer-->
         <footer>
             <div class="container">
@@ -548,7 +603,7 @@ Span placeholders = Icons
                                 <span class="icon-facebook"></span>
                             </a>
                             <a class="linkedin btn-primary" href="#">
-                                <span class="icon-linkedin"></span>
+                                <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                             <a class="twitter btn-primary">
                                 <span class="icon-twitter"></span>
