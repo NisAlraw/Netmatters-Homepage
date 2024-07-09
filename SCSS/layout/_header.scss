@@ -23,7 +23,7 @@
                 margin-left: 15px;
             }
 
-            .actions {
+            .menu-actions {
                 display: flex;
 
                 & a.btn {
@@ -39,7 +39,7 @@
 
                 & a.support {
                     color:#fff;
-                    background-color: red;
+                    background-color: $nav-it;
                     
                 }
 
@@ -113,6 +113,10 @@
                             color:#fff;
                             background-color: $dark-bg;
                             border-color: $dark-bg;
+
+                            .ham-bar {
+                                
+                            }
                         }
 
                     }
