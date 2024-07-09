@@ -165,7 +165,7 @@ a {
   border-radius: 0 5% 5% 0;
   background-color: #999aa2;
 }
-.header-container .header-row .menu-div .menu-actions .menu-search form .hamburger {
+.header-container .header-row .menu-div .menu-actions .hamburger {
   display: block;
   margin-left: 20px;
   height: 56px;

@@ -99,26 +99,30 @@
                             background-color: $btn-contact;
                         }
 
-                        .hamburger {
-                            display: block;
-                            margin-left: 20px;
-                            height: 56px;
-                            line-height: 46px;
-                            padding: 5px 15px;
-                            font-size: 1.125rem;
-                            border-radius: 3px;
-                            white-space: normal;
-                            text-decoration: none;
-                            text-transform: uppercase;
-                            color:#fff;
-                            background-color: $dark-bg;
-                            border-color: $dark-bg;
+                    }
+                    
+                }
+                
+                .hamburger {
+                    display: block;
+                    margin-left: 20px;
+                    height: 56px;
+                    line-height: 46px;
+                    padding: 5px 15px;
+                    font-size: 1.125rem;
+                    border-radius: 3px;
+                    white-space: normal;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:#fff;
+                    background-color: $dark-bg;
+                    border-color: $dark-bg;
 
-                            .ham-bar {
-                                
-                            }
+                    .ham-bar {
+
+                        .ham-box {
+                            
                         }
-
                     }
                 }
             }
