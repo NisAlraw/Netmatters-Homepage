@@ -1,4 +1,4 @@
-// Media Queries //--
+// Media Queries //
 
 @mixin mq($breakpoint) {
     @if $breakpoint == "x-small" {
@@ -25,3 +25,22 @@
         @error "#{$breakpoint} is not a valid media query size!;"
     }
 }
+
+
+@mixin btnclass(
+    $height: auto,
+    $line-h: 35px,
+    $padding: 5px 15px,
+    $font-size: 1.063rem,
+    $radius: 3px,
+    $text-trans: uppercase){
+        height: $height;
+        line-height: $line-h;
+        padding: $padding;
+        font-size: $font-size;
+        border-radius: $radius;
+        white-space: normal;
+        text-decoration: none;
+        text-transform: $text-trans;
+}
+

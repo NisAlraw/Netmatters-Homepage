@@ -41,55 +41,70 @@ Span placeholders = Icons
         </div>
     </div>
 
-    <div class="inner">
-        <div id="header-1" class="container">
-            <div id="netmatters-logo">
-                <picture>
-                    <span class="logo-padding">
-                        <span class="logo">
-                            <img src="img/f-logo.webp">
-                        </span>
-                    </span>
-                </picture>
-            </div>
-            <div class="header-1__actions">
-                <div class="actions__support-btn hidden">
+    <!--============= HEADER =============-->
+    <div class="container-header">
+        <div class="container">
+            <div class="row-header">
+
+                <div class="logo-header">
                     <a href="#">
-                        <span class="icon icon-mouse"></span>
-                        Support
+                        <img src="img/f-logo.webp">
                     </a>
                 </div>
-                <div class="actions__contact-btn hidden">
-                    <a href="#">
-                        <span class="icon icon-paperplane"></span>
-                        Contact
-                    </a>
-                </div>
-                <div class="search-form__wrapper">
-                    <form method="GET" action="#" accept-charset="UTF-8" class="search-form">
-                        <label for="search-input" class="hidden">Search:</label>
-                        <input class="form-control search-bar" placeholder="search..." id="search-input" name="keyword" type="text">
-                        <button type="submit" class="btn" id="search-submit">
-                            <span></span>
+
+                <div phone-menu>
+                    <div class="phone">
+                        <a href="#">
+                            <span><i class="fa-solid fa-phone-volume"></i></span>
+                        </a>
+                    </div>
+
+                    <div class="actions">
+                        <a href="#" class="btn support">
+                            <span><i class="fa-solid fa-computer-mouse"></i></span>
+                        </a>
+                        <a href="#" class="btn contact">
+                            <span><i class="fa-regular fa-paper-plane"></i></span>
+                        </a>
+                        
+                        <div class="search-bar">
+                            <form method="GET" action="#" accept-charset="UTF-8">
+                                <label for="search-bar"></label>
+                                <input type="text" id="search-bar" placeholder="Search...">
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <button type="button" class="btn hamburger">
+                            <span class="box-ham">
+                                <span class="bar-ham"></span>
+                            </span>
                         </button>
-                    </form>
-                </div>
-                <div class="actions__contact-hidden hidden">
-                    <a class="phone" href="#">
-                        <span></span>
-                    </a>
-                </div>
-                <div class="actions__burgermenu-btn">
-                    <button type="button" class="btn btn-primary hamburger">
-                        <span></span>
-                    </button>
+
+                    </div>
                 </div>
 
             </div>
-        </div>
 
-            <!--Main Nav-->
-        <div class="container main-nav nav hidden-sm hidden-xs">
+            <div class="mobile-search">
+                <form method="GET" action="#" accept-charset="UTF-8">
+                    <label for="mobile-search">
+                        <input type="text" id="mobile-search" placeholder="Search...">
+                        <button type="submit">
+                            <i class="fa solid fa-magnifying-glass"></i>
+                        </button>
+                    </label>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+        <!--============= NAVBAR =============-->
+        <div class="container main-nav nav">
             <div class="container">
                 <ul class="nav">
                         <!--Software Nav-->
@@ -547,47 +562,24 @@ Span placeholders = Icons
             </div>
         
         
-        
-        </div id=page-banner class="is-home">
-            <div class="static-banner">
-                <img src="img/Static-carousel.webp">
-            </div>
-            <div class="banner-content">
-                <div class="container banner--container-content">
-                    <div class="text">
-                        <div class="h1">
-                            The East Of England's Leading Technology Company
-                        </div>
-                        <p>
-                            Performance-driven digital and technology Services
-                            <br>
-                            with complete transparency
-                        </p>
-                    </div>
+        <!-- banner -->
+        <section id=page-banner>
+            <div class="banner">
+                <div class="img-banner">
+                    <img src="img/banner-lead-tech.png" alt="Netmatters Building">
+                </div>
+                <div class="content-banner">
+                    <h1>The East Of England's Leading Technology Company</h1>
+                    <p>
+                        Performance-driven digital and technology services with complete transparency
+                    </p>
+                    <a href="#" class="btn webdesign">
+                        Why Choose Us?
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-
-        <div class="middle">
-            <div class="container section">
-                <div class="cards-block">
-                    <div class="service list">
-                        <div class="row">
-                            <div class="services-header"> 
-                                <h2 class="h1">Our Services</h2>
-                                <h1>
-                                    <a class=h1 href="#">
-                                        View Our Work
-                                        <em class="icon-arrow-right"></em>
-                                    </a>
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    
+        </section>
 
         <!--Footer-->
         <footer>
