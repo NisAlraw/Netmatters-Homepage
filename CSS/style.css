@@ -109,10 +109,10 @@ body {
 }
 .header-container .header-row .menu-div .actions a.support {
   color: #fff;
-  background-color: #4183d7;
+  background-color: red;
 }
 .header-container .header-row .menu-div .actions a.contact {
-  color: fff;
+  color: #fff;
   background-color: #999aa2;
 }
 @media (min-width: 992px) {
