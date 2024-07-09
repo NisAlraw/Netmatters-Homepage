@@ -19,14 +19,14 @@
         img {
             max-width: 100%;
             display: block;
-            @include mq(medium)
-             {
-                max-width: 85%;
-            }
-            @include mq(large)
-            {
-                max-width: 85%;
-            }
+            // @include mq(medium)
+            //  {
+            //     max-width: 85%;
+            // }
+            // @include mq(large)
+            // {
+            //     max-width: 85%;
+            // }
         }
 
         .phone-menu {
