@@ -42,63 +42,68 @@ Span placeholders = Icons
     </div>
 
     <!--============= HEADER =============-->
-    <div class="container-header">
+    <div class="header-container">
         <div class="container">
-            <div class="row-header">
-
-                <div class="logo-header">
+            <div class="header-row">
+                <div class="header-logo">
                     <a href="#">
-                        <img src="img/netmatters-logo-header.png">
+                        <img src="./img/netmatters-logo-header.png">
                     </a>
                 </div>
 
-                <div class="phone-menu">
-                    <div class="phone">
+                <div class="menu-div">
+                    <div class="menu-phone">
                         <a href="#">
-                            <span><i class="fa-solid fa-phone-volume"></i></span>
+                            <span>
+                                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                            </span>
                         </a>
                     </div>
 
-                    <div class="actions">
+                    <div class="menu-actions">
                         <a href="#" class="btn support">
-                            <span><i class="fa-solid fa-computer-mouse"></i></span>
+                            <span>
+                                <i class="fa-solid fa-computer-mouse" aria-hidden="true"></i>
+                            </span>
+                            Support
                         </a>
+
                         <a href="#" class="btn contact">
-                            <span><i class="fa-regular fa-paper-plane"></i></span>
+                            <span>
+                                <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                            </span>
+                            Contact
                         </a>
-                        
-                        <div class="search-bar">
+
+                        <div class="menu-search">
                             <form method="GET" action="#" accept-charset="UTF-8">
                                 <label for="search-bar"></label>
                                 <input type="text" id="search-bar" placeholder="Search...">
                                 <button type="submit">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <span>
+                                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                    </span>
                                 </button>
                             </form>
                         </div>
 
                         <button type="button" class="btn hamburger">
-                            <span class="box-ham">
-                                <span class="bar-ham"></span>
-                            </span>
+                            <span class="ham-box"></span>
                         </button>
-
+                    </div>
+                    <div class="search-mobile">
+                        <form method="GET" action="#" accept-charset="UTF-8">
+                            <label></label>
+                            <input type="text" id="search-mobile" placeholder="Search..">
+                            <button type="submit">
+                                <span>
+                                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </form>
                     </div>
                 </div>
-
             </div>
-
-            <div class="mobile-search">
-                <form method="GET" action="#" accept-charset="UTF-8">
-                    <label for="mobile-search">
-                        <input type="text" id="mobile-search" placeholder="Search...">
-                        <button type="submit">
-                            <i class="fa solid fa-magnifying-glass"></i>
-                        </button>
-                    </label>
-                </form>
-            </div>
-
         </div>
     </div>
 
