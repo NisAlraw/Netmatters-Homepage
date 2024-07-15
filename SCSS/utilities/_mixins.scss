@@ -26,6 +26,7 @@
     }
 }
 
+//btn class
 
 @mixin btnclass(
     $height: auto,
@@ -44,3 +45,21 @@
         text-transform: $text-trans;
 }
 
+// Viewstyle
+
+@mixin viewstyle {
+    font-size: 1.635rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: $dark-txt;
+}
+
+
+// Hover Transition with Unique Colors
+
+@mixin hover-trans ($clr){
+    background-color: $clr;
+    border-color: $clr;
+    top: -10px;
+    transition: .5s ease;
+}

@@ -30,15 +30,26 @@ Span placeholders = Icons
 
 <div id="page-wrap">
 
-    <div class="cookies">
+    <div id="cookies">
         <button class="manage-consent-btn btn" type="button">Manage Consent</button>
         <div id="cookies-consent">
             <div class="cookie-container">
                 <div class="cookie-title">
-                    <h3>Cookies Policy</h3>
+                <div class="cookie-btns">
+                    <!-- <div class="c-btn">
+                        <a href="#" class="btn contact">Change Settings</a>
+                    </div> -->
+                    <!-- <div class="c-btn">
+                        <a href="#" class="btn accept-cookies">Accept cookies</a>
+                    </div> -->
                 </div>
             </div>
         </div>
+    </div>
+    <div class="chat">
+        <button class="btn chat-btn" type="button">
+            <i class="fa-solid fa-message"></i>
+        </button>
     </div>
 
     <!--============= HEADER =============-->
@@ -61,6 +72,7 @@ Span placeholders = Icons
                     </div>
 
                     <div class="menu-actions">
+
                         <a href="#" class="btn support">
                             <span>
                                 <i class="fa-solid fa-computer-mouse" aria-hidden="true"></i>
@@ -95,7 +107,7 @@ Span placeholders = Icons
                     </div>
                     <div class="search-mobile">
                         <form method="GET" action="#" accept-charset="UTF-8">
-                            <label></label>
+                            <label for="search-mobile"></label>
                             <input type="text" id="search-mobile" placeholder="Search..">
                             <button type="submit">
                                 <span>
@@ -111,464 +123,152 @@ Span placeholders = Icons
 
 
         <!--============= NAVBAR =============-->
+        <div class="navigation">
             <div class="container">
-                <ul class="nav">
-                        <!--Software Nav-->
-                    <li class="software nav-item">
-                        <a href="#">
-                            <span class="icon-laptop"></span>
+                <ul class="main-nav">
+                    <li class="bespoke">
+                        <a><i class="fa-solid fa-laptop" aria-hidden="true"></i>
                             <small>Bespoke</small>
-                            Software
+                            <span>Software</span>
                         </a>
-                        <div class="sub-menu-banner">
-                            <ul class="container sub-menu">
-                                <li class="h2 sub-menu-banner__title">Our Bespoke Software Services</li>
-                                <li class="nav-item nav-item__sub-menu">
+                        <div class="dropdown">
+                            <ul class="container">
+                                <li class="drop-title">Our Bespoke Software Services</li>
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-cogs"></span>
-                                        </span>
-                                        <span class="link-text">Bespoke CRM</span>
+                                        <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                                        <span>Bespoke CRM</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-briefcase"></span>
-                                        </span>
-                                        <span class="link-text">Business Automation</span>
+                                        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                                        <span>Business Automation</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-random"></span>
-                                        </span>
-                                        <span class="link-text">Software Intergrations</span>
+                                        <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
+                                        <span>Software Integrations</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-mobile"></span>
-                                        </span>
-                                        <span class="link-text">Mobile App Development</span>
+                                        <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                                        <span>Mobile App Development</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-folder-open"></span>
-                                        </span>
-                                        <span class="link-text">Bespoke Databases</span>
+                                        <i class="fa-solid fa-folder" aria-hidden="true"></i>
+                                        <span>Bespoke Database</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-transfer"></span>
-                                        </span>
-                                        <span class="link-text">Sharepoint Development</span>
+                                        <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                                        <span>Sharepoint Development</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-download"></span>
-                                        </span>
-                                        <span class="link-text">Operations Systems</span>
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Operational Systems</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-users"></span>
-                                        </span>
-                                        <span class="link-text">Business Central Implementation</span>
+                                        <i class="fa-solid fa-users" aria-hidden="true"></i>
+                                        <span>Business Central Implementation</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-laptop"></span>
-                                        </span>
-                                        <span class="link-text">Internet of Things (IoT) Software</span>
+                                        <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+                                        <span>Internet of Things (IOT) Software</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-cloud"></span>
-                                        </span>
-                                        <span class="link-text">Intranet Development</span>
+                                        <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                                        <span>Intranet Development</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-cloud-download"></span>
-                                        </span>
-                                        <span class="link-text">Customer Portal Development</span>
+                                        <i class="fa-solid fa-cloud-arrow-down" aria-hidden="true"></i>
+                                        <span>Software Integrations</span>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-globe"></span>
-                                        </span>
-                                        <span class="link-text">Reporting Hub</span>
+                                        <i class="fa-solid fa-earth-europe" aria-hidden="true"></i>
+                                        <span>Reporting Hub</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                        <!--IT Nav-->
-                    <li class="it nav-item">
-                        <a href="#">
-                            <span class="icon-display"></span>
+                    <li class="support">
+                        <a>
+                            <i class="fa-solid fa-desktop" aria-hidden="true"></i>
                             <small>IT</small>
-                            Support
+                            <span>Support</span>
                         </a>
-                        <div class="sub-menu-banner">
-                            <ul class="container sub-menu">
-                                <li class="h2 sub-menu-banner__title">Our IT Support Services</li>
-                                <li class="nav-item nav-item__sub-menu">
+                        <div class="dropdown">
+                            <ul class="container">
+                                <li class="drop-title">Our IT Support Services</li>
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-headphones"></span>
-                                        </span>
-                                        <span class="link-text">Managed IT Support</span>
+                                        <i class="fa-solid fa-headphones" aria-hidden="true"></i>
+                                        <span>Managed IT Support</span>
                                     </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
+                                </li>                             
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-briefcase"></span>
-                                        </span>
-                                        <span class="link-text">Business IT Support</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-laptop"></span>
-                                        </span>
-                                        <span class="link-text">Office 365 for Business</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-school"></span>
-                                        </span>
-                                        <span class="link-text">IT Consultancy</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-cloud"></span>
-                                        </span>
-                                        <span class="link-text">Cloud Service Provider</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-hard-drive"></span>
-                                        </span>
-                                        <span class="link-text">Data Backup &amp; Disaster Recovery</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                        <!--DM Nav-->
-                    <li class="dm nav-item">
-                        <a href="#">
-                            <span class="icon-bar-graph"></span>
-                            <small>Digital</small>
-                            Marketing
-                        </a>
-                        <div class="sub-menu-banner">
-                            <ul class="container sub-menu">
-                                <li class="h2 sub-menu-banner__title">Our Digital Marketing Software</li>
-                                <li class="nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon">
-                                            <span class="link-icon icon icon-search"></span>
-                                        </span>
-                                        <span class="link-text">Search Engine Optimisation (SEO)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon">
-                                            <span class="link-icon icon icon-money"></span>
-                                        </span>
-                                        <span class="link-text">Pay Per Click Advertising (PPC)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon">
-                                            <span class="link-icon icon icon-line-chart"></span>
-                                        </span>
-                                        <span class="link-text">Conversion Rate Optimisation (CRO)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon">
-                                            <span class="link-icon icon icon-envelope"></span>
-                                        </span>
-                                        <span class="link-text">Email Marketing</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon">
-                                            <span class="link-icon icon icon-group"></span>
-                                        </span>
-                                        <span class="link-text">Social Media Marketing</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon">
-                                            <span class="link-icon icon icon-pencil"></span>
-                                        </span>
-                                        <span class="link-text">Content Marketing</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                        <!--TC Nav-->
-                    <li class="tc nav-item">
-                        <a href="#">
-                            <span class="icon-phone_in_talk"></span>
-                            <small>Telecoms</small>
-                            Services
-                        </a>
-                        <div class="sub-menu-banner">
-                            <ul class="container sub-menu">
-                                <li class="h2 sub-menu-banner__title">Our Telecoms Services</li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-ticket"></span>
-                                        </span>
-                                        <span class="link-text">Business Mobile</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-phone"></span>
-                                        </span>
-                                        <span class="link-text">Hosted VoIP Provider</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-phone-square"></span>
-                                        </span>
-                                        <span class="link-text">Business VoIP Systems</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-speed"></span>
-                                        </span>
-                                        <span class="link-text">Business Broadband</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-handshake"></span>
-                                        </span>
-                                        <span class="link-text">Leased Lines Provider</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-phone_in_talk"></span>
-                                        </span>
-                                        <span class="link-text">3CX Systems</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div> 
-                    </li>
-                        <!--WD Nav-->
-                    <li class="wd nav-item">
-                        <a href="#">
-                            <span class="icon-code"></span>
-                            <small>Web</small>
-                            Development
-                        </a>
-                        <div class="sub-menu-banner">
-                            <ul class="container sub-menu">
-                                <li class="h2 sub-menu-banner__title">Our Web Design Services</li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-pencil"></span>
-                                        </span>
-                                        <span class="link-text">Bespoke Website Design</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-shopping-cart"></span>
-                                        </span>
-                                        <span class="link-text">eCommerce Website Design</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-dipslay"></span>
-                                        </span>
-                                        <span class="link-text">Pay Monthly Websites</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-bullhorn"></span>
-                                        </span>
-                                        <span class="link-text">Branding &amp; Design</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-mobile"></span>
-                                        </span>
-                                        <span class="link-text">Mobile App Development</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-cloud"></span>
-                                        </span>
-                                        <span class="link-text">Web Hosting</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                        <!--CS Nav-->
-                    <li class="cs">
-                        <a href="#">
-                            <span class="icon-security"></span>
-                            <small>Cyber</small>
-                            security
-                        </a>
-                        <div class="sub-menu-banner">
-                            <ul class="container sub-menu">
-                                <li class="h2 nav-item__sub-menu">Our Cyber Security Services</li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-paper"></span>
-                                        </span>
-                                        <span class="link-text">Cyber Security Assessment</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-clock"></span>
-                                        </span>
-                                        <span class="link-text">Cyber Security Management</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-school"></span>
-                                        </span>
-                                        <span class="link-text">Cyber Essentials Certification</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-security"></span>
-                                        </span>
-                                        <span class="link-text">PCI Compliance</span>
+                                        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                                        <span>Business IT Support</span>
                                     </a>
                                 </li>                                
-                                <li class="nav-item nav-item__sub-menu">
+                                <li>
                                     <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-lock-closed"></span>
-                                        </span>
-                                        <span class="link-text">Hacking Prevention</span>
+                                        <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+                                        <span>Office 365 for Business</span>
+                                    </a>
+                                </li>                                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                        <span>IT Consultancy</span>
+                                    </a>
+                                </li>                                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                                        <span>Cloud Service Provider</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-hard-drive" aria-hidden="true"></i>
+                                        <span>Data Backup & Disaster Recovery</span>
+                                    </a>
+                                </li>   
                             </ul>
                         </div>
                     </li>
-                        <!--DC Nav-->
-                    <li class="dc nav-item">
+                    <li class="marketing">
                         <a href="#">
-                            <span class="icon-school"></span>
-                            <small>Developer</small>
-                            Course
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <small>Digital</small>
+                            <span>Marketing</span>
                         </a>
-                        <div class="sub-menu-banner">
-                            <ul class="container sub-menu">
-                                <li class="h2 sub-menu-banner__title">Our Developer Course Services</li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-laptop"></span>
-                                        </span>
-                                        <span class="link-text">Train For A Career In Tech</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-code"></span>
-                                        </span>
-                                        <span class="link-text">Skills Bootcamp</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-question"></span>
-                                        </span>
-                                        <span class="link-text">Scion Scheme Frequently Asked Questions</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item nav-item__sub-menu">
-                                    <a href="#">
-                                        <span class="link-icon-container">
-                                            <span class="link-icon icon icon-handshake"></span>
-                                        </span>
-                                        <span class="link-text">Scion Collaborators</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
                 </ul>
             </div>
-    
+        </div>
         
-        <!-- banner -->
+<!--============= BANNER =============-->
     <section id=page-banner>
         <div class="banner">
             <div class="img-banner">
@@ -587,7 +287,170 @@ Span placeholders = Icons
             </div>
     </section>
 
-        <!--Footer-->
+
+<!--============= SERVICES =============-->
+    <section id="services">
+        <div class="container section">
+            <div class="services-heading">
+                <h2>Our Services</h2>
+                <a href="#" class="hidden-sm">
+                    View Our Work &nbsp;
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="services-all">
+
+                <div class="s-container1">
+                    <a href="#">
+                        <div class="icon icon-clr1">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <h3>Bespoke Software</h3>
+                        <p>
+                            Bespoke software solutions for all your business needs including integrations and reporting.
+                        </p>
+                        <div class="btn btn-icon-clr1">
+                            <div class=btnclr1-txt>READ MORE</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="s-container2">
+                    <a href="#">
+                        <div class="icon icon-clr2">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <h3>IT Support</h3>
+                        <p>
+                            Fully managed IT support and consultancy packages tailored to meet your exact business needs.
+                        </p>
+                        <div class="btn icon-clr2">
+                            READ MORE
+                        </div>
+                    </a>
+                </div>
+
+                <div class="s-container3">
+                    <a href="#">
+                        <div class="icon icon-clr3">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <h3>Digital Marketing</h3>
+                        <p>
+                            Driven brand awareness & ROI through creative digital marketing campaigns.  
+                        </p>
+                        <div class="btn icon-clr3">
+                            READ MORE
+                        </div>
+                    </a>
+                </div>
+
+                <div class="s-container4">
+                    <a href="#">
+                        <div class="icon icon-clr4">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <h3>Telecoms Services</h3>
+                        <p>
+                            Business telephony solutions including mobile & connectivity solutions.
+                        </p>
+                        <div class="btn icon-clr4">
+                            READ MORE
+                        </div>
+                    </a>
+                </div>
+
+                <div class="s-container5">
+                    <a href="#">
+                        <div class="icon icon-clr5">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3>Web Design</h3>
+                        <p>
+                            User-centric design for business looking to make a lasting impression
+                        </p>
+                        <div class="btn icon-clr5">
+                            READ MORE
+                        </div>
+                    </a>
+                </div>
+
+                <div class="s-container6">
+                    <a href="#">
+                        <div class="icon icon-clr6">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Cyber Security</h3>
+                        <p>
+                            Prevention, testing, consultancy & breach management services.
+                        </p>
+                        <div class="btn icon-clr6">
+                            READ MORE
+                        </div>
+                    </a>
+                </div>
+
+                <div class="s-container7">
+                    <a href="#">
+                        <div class="icon icon-clr7">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Developer Training</h3>
+                        <p>
+                            Web design & software training courses designed to secure a job in tech.
+                        </p>
+                        <div class="btn icon-clr7">
+                            READ MORE
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <!----SERVICE-ALL MBL---->
+            <div class="mobile-viewall">
+                <a href="#">
+                    View Our Work&nbsp;
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+<!--============= ACCREDS SLIDESHOW =============-->
+    <div class="section">
+        <div class="accreds-slide">
+            <div class="outer">
+                <div class="slide-1">
+                    <div class="logo-badge">
+                        <img src="./img/accreds/google-partner.webp">
+                    </div>
+                </div>
+                <div class="slide-2">
+                    <div class="logo-badge">
+                        <img src="./img/accreds/living_wage.webp">
+                    </div>
+                </div>
+                <div class="slide-3">
+                    <div class="logo-badge">
+                        <img src="./img/accreds/norfolk_prohelp.webp">
+                    </div>
+                </div>
+                <div class="slide-4">
+                    <div class="logo-badge">
+                        <img src="./img/accreds/investing-in-future-growth.webp">
+                    </div>
+                </div>
+                <div class="slide-5">
+                    <div class="logo-badge">
+                        <img src="./img/accreds/norfolk-carbon-charter.webp"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--============= FOOTER =============-->
         <footer>
             <div class="container">
                 <div class="footer-all">

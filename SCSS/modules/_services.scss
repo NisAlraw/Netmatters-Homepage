@@ -1,0 +1,156 @@
+// Services
+
+#services {
+    background-color: #fff;
+
+    .services-heading {
+        position: relative;
+
+        h2 {
+            color: $dark-txt;
+            font-size: 2.7rem;
+            font-weight: $font-bold;
+            margin-top: -13px;
+            margin-bottom: 15px;
+            @media (max-width: 1259px){
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .services-all {
+        position: relative;
+        display: grid;
+        grid-gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        grid-template-areas: "soft" "supp" "digi" "tele" "des" "cyb" "dev";
+
+        .s-container {
+            &1 {grid-area: soft}
+            &2 {grid-area: supp;}
+            &3 {grid-area: digi;}
+            &4 {grid-area: tele;}
+            &5 {grid-area: des;}
+            &6 {grid-area: cyb;}
+            &7 {grid-area: dev;}
+        }
+
+        @include mq(medium) {
+            grid-column: repeat(2, 1fr);
+            grid-template-areas: "soft soft" "supp supp" "digi digi" "tele des" "cyb dev";
+        }
+
+        @include mq(large) {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: "soft soft supp supp digi digi" "tele tele tele des des des" "cyb cyb cyb dev dev dev";
+        }
+
+        @include mq(x-large) {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-areas: "soft soft soft soft supp supp supp supp digi digi digi digi" "tele tele tele des des des cyb cyb cyb dev dev dev";
+        }
+
+        .s-container {
+            &1:hover {@include hover-trans($nav-software);}
+            &2:hover {@include hover-trans($nav-it);}
+            &3:hover {@include hover-trans($nav-digital);}
+            &4:hover {@include hover-trans($nav-telecom);}
+            &5:hover {@include hover-trans($nav-webdesign);}
+            &6:hover {@include hover-trans($nav-cyber);}
+            &7:hover {@include hover-trans($nav-developer);}
+
+            &1, &2, &3, &4, &5, &6, &7 {
+                border: 1px solid #ccc;
+                box-shadow: 0 3px 35px rgba($color: #0000, $alpha: .1);
+                position: relative;
+                border-radius: 15px;
+                background-color: #fff;
+                top: 0;
+                transition: .5s ease;
+
+                & a {
+                    padding: 30px;
+                    color: #fff;
+                    display: grid;
+                    align-items: center;
+                    text-align: center;
+                    justify-items: center;
+                    text-decoration: none;
+
+                    &:hover{border-radius: 15px;}
+                    &:hover h3, &:hover p {color: #fff;}
+                    &:hover .icon-clr{ &1, &2, &3, &4, &5, &6, &7 {background-color: #fff;}}
+                    &:hover .btn-icon-clr1{background-color: #fff;}
+                    &:hover .btnclr1-txt{color: $nav-software-drk;}
+
+                    &:hover .icon-clr1 {color: $nav-software;}
+                    &:hover .icon-clr2 {color: $nav-it;}
+                    &:hover .icon-clr3 {color: $nav-digital;}
+                    &:hover .icon-clr4 {color: $nav-telecom;}
+                    &:hover .icon-clr5 {color: $nav-webdesign;}
+                    &:hover .icon-clr6 {color: $nav-cyber;}
+                    &:hover .icon-clr7 {color: $nav-developer;}
+
+                    .icon-clr1 {background-color: $nav-software;}
+                    .btn-icon-clr1{background-color: $nav-software-btn;}
+                    .icon-clr2 {background-color: $nav-it;}
+                    .icon-clr3 {background-color: $nav-digital;}
+                    .icon-clr4 {background-color: $nav-telecom;}
+                    .icon-clr5 {background-color: $nav-webdesign;}
+                    .icon-clr6 {background-color: $nav-cyber;}
+                    .icon-clr7 {background-color: $nav-developer;}
+
+                    div.btn{@include btnclass();}
+                    > div.icon {
+                        font-size: 2rem;
+                        border-radius: 50%;
+                        width: 65px;
+                        height: 65px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto 17px;
+                    }
+
+                    & h3 {
+                        font-size: 1.3rem;
+                        font-weight: $font-light;
+                        color: $dark-txt;
+                        padding-bottom: 10px;
+                        margin: 0 0 11px;
+                    }
+
+                    p {
+                        margin-top: 0;
+                        color: $dark-txt;
+                        line-height: 1.375rem;
+                        font-size: .8125rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-viewall {
+
+        & a {
+            color: $dark-txt;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @include mq(medium) {
+            display: none;
+        }
+        @include mq(large) {
+            display: none;
+        }
+        @include mq(x-large) {
+            display: none;
+        }
+    }
+}

@@ -60,6 +60,50 @@ a {
   }
 }
 
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#services .services-heading a.hidden-sm {
+  display: none;
+}
+@media (min-width: 768px) {
+  #services .services-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #services .services-heading a.hidden-sm {
+    display: flex;
+    font-size: 1.635rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333645;
+  }
+  #services .services-heading a.hidden-sm:hover {
+    text-decoration: underline;
+  }
+}
+
+#our-services .mobile-viewall {
+  text-align: center;
+}
+#our-services .mobile-viewall a {
+  font-size: 1.635rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333645;
+}
+@media (min-width: 768px) {
+  #our-services .mobile-viewall a {
+    display: none;
+  }
+}
+#our-services .mobile-viewall a:hover {
+  text-decoration: underline;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -90,16 +134,31 @@ a {
   display: flex;
   align-items: center;
 }
-.header-container .header-row .menu-div .phone {
-  margin-left: 15px;
-}
 @media (min-width: 768px) {
-  .header-container .header-row .menu-div .phone {
+  .header-container .header-row .menu-div .search-mobile {
     display: none;
   }
 }
+.header-container .header-row .menu-div .menu-phone {
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
+  .header-container .header-row .menu-div .menu-phone {
+    display: none;
+  }
+}
+.header-container .header-row .menu-div .menu-phone a {
+  color: #333645;
+}
 .header-container .header-row .menu-div .menu-actions {
   display: flex;
+}
+@media (max-width: 768px) {
+  .header-container .header-row .menu-div .menu-actions .support,
+  .header-container .header-row .menu-div .menu-actions .contact,
+  .header-container .header-row .menu-div .menu-actions .menu-search {
+    display: none;
+  }
 }
 .header-container .header-row .menu-div .menu-actions a.btn {
   text-decoration: none;
@@ -147,7 +206,7 @@ a {
     width: 240px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .header-container .header-row .menu-div .menu-actions .menu-search form input {
     display: none;
   }
@@ -180,6 +239,33 @@ a {
   background-color: #323544;
   border-color: #323544;
 }
+.header-container .header-row .menu-div .menu-actions .hamburger:hover {
+  background-color: #22242e;
+}
+.header-container .header-row .menu-div .menu-actions .hamburger .ham-box {
+  width: 33px;
+  height: 19px;
+  display: inline-block;
+  position: relative;
+}
+.header-container .header-row .menu-div .menu-actions .hamburger .ham-box .ham-bar {
+  top: 50%;
+}
+.header-container .header-row .menu-div .menu-actions .hamburger .ham-box .ham-bar, .header-container .header-row .menu-div .menu-actions .hamburger .ham-box .ham-bar::before, .header-container .header-row .menu-div .menu-actions .hamburger .ham-box .ham-bar::after {
+  content: "";
+  width: 33px;
+  height: 4px;
+  position: absolute;
+  background-color: #fff;
+  display: block;
+}
+.header-container .header-row .menu-div .menu-actions .hamburger .ham-box .ham-bar::before {
+  top: -10px;
+}
+.header-container .header-row .menu-div .menu-actions .hamburger .ham-box .ham-bar::after {
+  bottom: -10px;
+}
+
 footer {
   background-color: #323544;
   padding: 27px 0 0;
@@ -345,8 +431,30 @@ footer .footer-rows .footer-list ul.footer-ul li a:hover {
   }
 }
 
-.services-header a {
-  color: #333645;
+#cookies div.cookies button.manage-consent.btn {
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  position: fixed;
+  font-weight: 600;
+  border-width: 1px 1px 0 0;
+  border-top-right-radius: 10px;
+  height: auto;
+  line-height: 22px;
+  padding: 0 10px;
+  font-size: 0.8rem;
+  white-space: normal;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #75788a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#cookies div.cookies button.manage-consent.btn:hover {
+  background-color: #75788a;
 }
 
 #page-banner {
@@ -460,6 +568,274 @@ footer .footer-rows .footer-list ul.footer-ul li a:hover {
 #page-banner .banner .content-banner i {
   margin-right: -4px;
   margin-left: 12px;
+}
+
+#services {
+  background-color: #fff;
+}
+#services .services-heading {
+  position: relative;
+}
+#services .services-heading h2 {
+  color: #333645;
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-top: -13px;
+  margin-bottom: 15px;
+}
+@media (max-width: 1259px) {
+  #services .services-heading h2 {
+    margin-bottom: 15px;
+  }
+}
+#services .services-all {
+  position: relative;
+  display: grid;
+  grid-gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  grid-template-areas: "soft" "supp" "digi" "tele" "des" "cyb" "dev";
+}
+#services .services-all .s-container1 {
+  grid-area: soft;
+}
+#services .services-all .s-container2 {
+  grid-area: supp;
+}
+#services .services-all .s-container3 {
+  grid-area: digi;
+}
+#services .services-all .s-container4 {
+  grid-area: tele;
+}
+#services .services-all .s-container5 {
+  grid-area: des;
+}
+#services .services-all .s-container6 {
+  grid-area: cyb;
+}
+#services .services-all .s-container7 {
+  grid-area: dev;
+}
+@media (min-width: 768px) {
+  #services .services-all {
+    grid-column: repeat(2, 1fr);
+    grid-template-areas: "soft soft" "supp supp" "digi digi" "tele des" "cyb dev";
+  }
+}
+@media (min-width: 992px) {
+  #services .services-all {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "soft soft supp supp digi digi" "tele tele tele des des des" "cyb cyb cyb dev dev dev";
+  }
+}
+@media (min-width: 1260px) {
+  #services .services-all {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "soft soft soft soft supp supp supp supp digi digi digi digi" "tele tele tele des des des cyb cyb cyb dev dev dev";
+  }
+}
+#services .services-all .s-container1:hover {
+  background-color: #67809f;
+  border-color: #67809f;
+  top: -10px;
+  transition: 0.5s ease;
+}
+#services .services-all .s-container2:hover {
+  background-color: #4183d7;
+  border-color: #4183d7;
+  top: -10px;
+  transition: 0.5s ease;
+}
+#services .services-all .s-container3:hover {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  top: -10px;
+  transition: 0.5s ease;
+}
+#services .services-all .s-container4:hover {
+  background-color: #d64541;
+  border-color: #d64541;
+  top: -10px;
+  transition: 0.5s ease;
+}
+#services .services-all .s-container5:hover {
+  background-color: #926fb1;
+  border-color: #926fb1;
+  top: -10px;
+  transition: 0.5s ease;
+}
+#services .services-all .s-container6:hover {
+  background-color: #f62459;
+  border-color: #f62459;
+  top: -10px;
+  transition: 0.5s ease;
+}
+#services .services-all .s-container7:hover {
+  background-color: #ce4125;
+  border-color: #ce4125;
+  top: -10px;
+  transition: 0.5s ease;
+}
+#services .services-all .s-container1, #services .services-all .s-container2, #services .services-all .s-container3, #services .services-all .s-container4, #services .services-all .s-container5, #services .services-all .s-container6, #services .services-all .s-container7 {
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  top: 0;
+  transition: 0.5s ease;
+}
+#services .services-all .s-container1 a, #services .services-all .s-container2 a, #services .services-all .s-container3 a, #services .services-all .s-container4 a, #services .services-all .s-container5 a, #services .services-all .s-container6 a, #services .services-all .s-container7 a {
+  padding: 30px;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  text-decoration: none;
+}
+#services .services-all .s-container1 a:hover, #services .services-all .s-container2 a:hover, #services .services-all .s-container3 a:hover, #services .services-all .s-container4 a:hover, #services .services-all .s-container5 a:hover, #services .services-all .s-container6 a:hover, #services .services-all .s-container7 a:hover {
+  border-radius: 15px;
+}
+#services .services-all .s-container1 a:hover h3, #services .services-all .s-container1 a:hover p, #services .services-all .s-container2 a:hover h3, #services .services-all .s-container2 a:hover p, #services .services-all .s-container3 a:hover h3, #services .services-all .s-container3 a:hover p, #services .services-all .s-container4 a:hover h3, #services .services-all .s-container4 a:hover p, #services .services-all .s-container5 a:hover h3, #services .services-all .s-container5 a:hover p, #services .services-all .s-container6 a:hover h3, #services .services-all .s-container6 a:hover p, #services .services-all .s-container7 a:hover h3, #services .services-all .s-container7 a:hover p {
+  color: #fff;
+}
+#services .services-all .s-container1 a:hover .icon-clr1, #services .services-all .s-container1 a:hover .icon-clr2, #services .services-all .s-container1 a:hover .icon-clr3, #services .services-all .s-container1 a:hover .icon-clr4, #services .services-all .s-container1 a:hover .icon-clr5, #services .services-all .s-container1 a:hover .icon-clr6, #services .services-all .s-container1 a:hover .icon-clr7, #services .services-all .s-container2 a:hover .icon-clr1, #services .services-all .s-container2 a:hover .icon-clr2, #services .services-all .s-container2 a:hover .icon-clr3, #services .services-all .s-container2 a:hover .icon-clr4, #services .services-all .s-container2 a:hover .icon-clr5, #services .services-all .s-container2 a:hover .icon-clr6, #services .services-all .s-container2 a:hover .icon-clr7, #services .services-all .s-container3 a:hover .icon-clr1, #services .services-all .s-container3 a:hover .icon-clr2, #services .services-all .s-container3 a:hover .icon-clr3, #services .services-all .s-container3 a:hover .icon-clr4, #services .services-all .s-container3 a:hover .icon-clr5, #services .services-all .s-container3 a:hover .icon-clr6, #services .services-all .s-container3 a:hover .icon-clr7, #services .services-all .s-container4 a:hover .icon-clr1, #services .services-all .s-container4 a:hover .icon-clr2, #services .services-all .s-container4 a:hover .icon-clr3, #services .services-all .s-container4 a:hover .icon-clr4, #services .services-all .s-container4 a:hover .icon-clr5, #services .services-all .s-container4 a:hover .icon-clr6, #services .services-all .s-container4 a:hover .icon-clr7, #services .services-all .s-container5 a:hover .icon-clr1, #services .services-all .s-container5 a:hover .icon-clr2, #services .services-all .s-container5 a:hover .icon-clr3, #services .services-all .s-container5 a:hover .icon-clr4, #services .services-all .s-container5 a:hover .icon-clr5, #services .services-all .s-container5 a:hover .icon-clr6, #services .services-all .s-container5 a:hover .icon-clr7, #services .services-all .s-container6 a:hover .icon-clr1, #services .services-all .s-container6 a:hover .icon-clr2, #services .services-all .s-container6 a:hover .icon-clr3, #services .services-all .s-container6 a:hover .icon-clr4, #services .services-all .s-container6 a:hover .icon-clr5, #services .services-all .s-container6 a:hover .icon-clr6, #services .services-all .s-container6 a:hover .icon-clr7, #services .services-all .s-container7 a:hover .icon-clr1, #services .services-all .s-container7 a:hover .icon-clr2, #services .services-all .s-container7 a:hover .icon-clr3, #services .services-all .s-container7 a:hover .icon-clr4, #services .services-all .s-container7 a:hover .icon-clr5, #services .services-all .s-container7 a:hover .icon-clr6, #services .services-all .s-container7 a:hover .icon-clr7 {
+  background-color: #fff;
+}
+#services .services-all .s-container1 a:hover .btn-icon-clr1, #services .services-all .s-container2 a:hover .btn-icon-clr1, #services .services-all .s-container3 a:hover .btn-icon-clr1, #services .services-all .s-container4 a:hover .btn-icon-clr1, #services .services-all .s-container5 a:hover .btn-icon-clr1, #services .services-all .s-container6 a:hover .btn-icon-clr1, #services .services-all .s-container7 a:hover .btn-icon-clr1 {
+  background-color: #fff;
+}
+#services .services-all .s-container1 a:hover .btnclr1-txt, #services .services-all .s-container2 a:hover .btnclr1-txt, #services .services-all .s-container3 a:hover .btnclr1-txt, #services .services-all .s-container4 a:hover .btnclr1-txt, #services .services-all .s-container5 a:hover .btnclr1-txt, #services .services-all .s-container6 a:hover .btnclr1-txt, #services .services-all .s-container7 a:hover .btnclr1-txt {
+  color: #526781;
+}
+#services .services-all .s-container1 a:hover .icon-clr1, #services .services-all .s-container2 a:hover .icon-clr1, #services .services-all .s-container3 a:hover .icon-clr1, #services .services-all .s-container4 a:hover .icon-clr1, #services .services-all .s-container5 a:hover .icon-clr1, #services .services-all .s-container6 a:hover .icon-clr1, #services .services-all .s-container7 a:hover .icon-clr1 {
+  color: #67809f;
+}
+#services .services-all .s-container1 a:hover .icon-clr2, #services .services-all .s-container2 a:hover .icon-clr2, #services .services-all .s-container3 a:hover .icon-clr2, #services .services-all .s-container4 a:hover .icon-clr2, #services .services-all .s-container5 a:hover .icon-clr2, #services .services-all .s-container6 a:hover .icon-clr2, #services .services-all .s-container7 a:hover .icon-clr2 {
+  color: #4183d7;
+}
+#services .services-all .s-container1 a:hover .icon-clr3, #services .services-all .s-container2 a:hover .icon-clr3, #services .services-all .s-container3 a:hover .icon-clr3, #services .services-all .s-container4 a:hover .icon-clr3, #services .services-all .s-container5 a:hover .icon-clr3, #services .services-all .s-container6 a:hover .icon-clr3, #services .services-all .s-container7 a:hover .icon-clr3 {
+  color: #2ecc71;
+}
+#services .services-all .s-container1 a:hover .icon-clr4, #services .services-all .s-container2 a:hover .icon-clr4, #services .services-all .s-container3 a:hover .icon-clr4, #services .services-all .s-container4 a:hover .icon-clr4, #services .services-all .s-container5 a:hover .icon-clr4, #services .services-all .s-container6 a:hover .icon-clr4, #services .services-all .s-container7 a:hover .icon-clr4 {
+  color: #d64541;
+}
+#services .services-all .s-container1 a:hover .icon-clr5, #services .services-all .s-container2 a:hover .icon-clr5, #services .services-all .s-container3 a:hover .icon-clr5, #services .services-all .s-container4 a:hover .icon-clr5, #services .services-all .s-container5 a:hover .icon-clr5, #services .services-all .s-container6 a:hover .icon-clr5, #services .services-all .s-container7 a:hover .icon-clr5 {
+  color: #926fb1;
+}
+#services .services-all .s-container1 a:hover .icon-clr6, #services .services-all .s-container2 a:hover .icon-clr6, #services .services-all .s-container3 a:hover .icon-clr6, #services .services-all .s-container4 a:hover .icon-clr6, #services .services-all .s-container5 a:hover .icon-clr6, #services .services-all .s-container6 a:hover .icon-clr6, #services .services-all .s-container7 a:hover .icon-clr6 {
+  color: #f62459;
+}
+#services .services-all .s-container1 a:hover .icon-clr7, #services .services-all .s-container2 a:hover .icon-clr7, #services .services-all .s-container3 a:hover .icon-clr7, #services .services-all .s-container4 a:hover .icon-clr7, #services .services-all .s-container5 a:hover .icon-clr7, #services .services-all .s-container6 a:hover .icon-clr7, #services .services-all .s-container7 a:hover .icon-clr7 {
+  color: #ce4125;
+}
+#services .services-all .s-container1 a .icon-clr1, #services .services-all .s-container2 a .icon-clr1, #services .services-all .s-container3 a .icon-clr1, #services .services-all .s-container4 a .icon-clr1, #services .services-all .s-container5 a .icon-clr1, #services .services-all .s-container6 a .icon-clr1, #services .services-all .s-container7 a .icon-clr1 {
+  background-color: #67809f;
+}
+#services .services-all .s-container1 a .btn-icon-clr1, #services .services-all .s-container2 a .btn-icon-clr1, #services .services-all .s-container3 a .btn-icon-clr1, #services .services-all .s-container4 a .btn-icon-clr1, #services .services-all .s-container5 a .btn-icon-clr1, #services .services-all .s-container6 a .btn-icon-clr1, #services .services-all .s-container7 a .btn-icon-clr1 {
+  background-color: #f7b322;
+}
+#services .services-all .s-container1 a .icon-clr2, #services .services-all .s-container2 a .icon-clr2, #services .services-all .s-container3 a .icon-clr2, #services .services-all .s-container4 a .icon-clr2, #services .services-all .s-container5 a .icon-clr2, #services .services-all .s-container6 a .icon-clr2, #services .services-all .s-container7 a .icon-clr2 {
+  background-color: #4183d7;
+}
+#services .services-all .s-container1 a .icon-clr3, #services .services-all .s-container2 a .icon-clr3, #services .services-all .s-container3 a .icon-clr3, #services .services-all .s-container4 a .icon-clr3, #services .services-all .s-container5 a .icon-clr3, #services .services-all .s-container6 a .icon-clr3, #services .services-all .s-container7 a .icon-clr3 {
+  background-color: #2ecc71;
+}
+#services .services-all .s-container1 a .icon-clr4, #services .services-all .s-container2 a .icon-clr4, #services .services-all .s-container3 a .icon-clr4, #services .services-all .s-container4 a .icon-clr4, #services .services-all .s-container5 a .icon-clr4, #services .services-all .s-container6 a .icon-clr4, #services .services-all .s-container7 a .icon-clr4 {
+  background-color: #d64541;
+}
+#services .services-all .s-container1 a .icon-clr5, #services .services-all .s-container2 a .icon-clr5, #services .services-all .s-container3 a .icon-clr5, #services .services-all .s-container4 a .icon-clr5, #services .services-all .s-container5 a .icon-clr5, #services .services-all .s-container6 a .icon-clr5, #services .services-all .s-container7 a .icon-clr5 {
+  background-color: #926fb1;
+}
+#services .services-all .s-container1 a .icon-clr6, #services .services-all .s-container2 a .icon-clr6, #services .services-all .s-container3 a .icon-clr6, #services .services-all .s-container4 a .icon-clr6, #services .services-all .s-container5 a .icon-clr6, #services .services-all .s-container6 a .icon-clr6, #services .services-all .s-container7 a .icon-clr6 {
+  background-color: #f62459;
+}
+#services .services-all .s-container1 a .icon-clr7, #services .services-all .s-container2 a .icon-clr7, #services .services-all .s-container3 a .icon-clr7, #services .services-all .s-container4 a .icon-clr7, #services .services-all .s-container5 a .icon-clr7, #services .services-all .s-container6 a .icon-clr7, #services .services-all .s-container7 a .icon-clr7 {
+  background-color: #ce4125;
+}
+#services .services-all .s-container1 a div.btn, #services .services-all .s-container2 a div.btn, #services .services-all .s-container3 a div.btn, #services .services-all .s-container4 a div.btn, #services .services-all .s-container5 a div.btn, #services .services-all .s-container6 a div.btn, #services .services-all .s-container7 a div.btn {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#services .services-all .s-container1 a > div.icon, #services .services-all .s-container2 a > div.icon, #services .services-all .s-container3 a > div.icon, #services .services-all .s-container4 a > div.icon, #services .services-all .s-container5 a > div.icon, #services .services-all .s-container6 a > div.icon, #services .services-all .s-container7 a > div.icon {
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 17px;
+}
+#services .services-all .s-container1 a h3, #services .services-all .s-container2 a h3, #services .services-all .s-container3 a h3, #services .services-all .s-container4 a h3, #services .services-all .s-container5 a h3, #services .services-all .s-container6 a h3, #services .services-all .s-container7 a h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #333645;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+#services .services-all .s-container1 a p, #services .services-all .s-container2 a p, #services .services-all .s-container3 a p, #services .services-all .s-container4 a p, #services .services-all .s-container5 a p, #services .services-all .s-container6 a p, #services .services-all .s-container7 a p {
+  margin-top: 0;
+  color: #333645;
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+}
+#services .mobile-viewall a {
+  color: #333645;
+  text-decoration: none;
+}
+#services .mobile-viewall a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  #services .mobile-viewall {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #services .mobile-viewall {
+    display: none;
+  }
+}
+@media (min-width: 1260px) {
+  #services .mobile-viewall {
+    display: none;
+  }
+}
+
+.accreds-slide {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.accreds-slide .outer {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.accreds-slide .outer .slide1, .accreds-slide .outer .slide2, .accreds-slide .outer .slide3, .accreds-slide .outer .slide4, .accreds-slide .outer .slide5 {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.accreds-slide .logo-badge {
+  flex-grow: 1;
+  padding: 0, 40px;
+  position: relative;
+  filter: grayscale(100%);
 }
 
 /*# sourceMappingURL=style.css.map */

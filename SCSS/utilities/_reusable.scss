@@ -35,3 +35,39 @@
         width: 1200px;
     }
 }
+
+// Section
+.section  {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+// Services View-all
+#services .services-heading {
+    a.hidden-sm {display: none;}
+
+    @include mq(medium){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a.hidden-sm{
+            display: flex;
+            @include viewstyle;
+            &:hover {text-decoration: underline;}
+        }
+    }
+}
+
+//Mobile Arrow View-all
+#our-services {
+    .mobile-viewall {
+        text-align: center;
+        & a {
+            @include viewstyle;
+            @include mq(medium){display: none;}
+            &:hover {text-decoration: underline;}
+        }
+    }
+}
+
