@@ -1,8 +1,24 @@
 .accreds-slide {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    
     .logo-badge {
-        flex-grow: 1;
-        padding: 0, 40px;
-        position: relative;
-        filter: grayscale(100%)
+        &1{grid-area: l1}
+        &2{grid-area: l2;}
+        &3{grid-area: l3}
+        &4{grid-area: l4;}
+        &5{grid-area: l5;}
     }
+
+    .logo-badge {&1, &2, &3, &4, &5{
+        height: 70px;
+        width: auto;
+        max-height: 70px;
+        padding: 0 40px;
+        position: relative;
+        align-items: center;
+        filter: grayscale(100%);
+    }}
 }

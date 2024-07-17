@@ -29,68 +29,86 @@ Span placeholders = Icons
 <body>
 
 <div id="page-wrap">
-
-    <div id="cookies">
-        <button class="manage-consent-btn btn" type="button">Manage Consent</button>
-        <div id="cookies-consent">
-            <div class="cookie-container">
-                <div class="cookie-title">
-                <div class="cookie-btns">
-                    <!-- <div class="c-btn">
-                        <a href="#" class="btn contact">Change Settings</a>
-                    </div> -->
-                    <!-- <div class="c-btn">
-                        <a href="#" class="btn accept-cookies">Accept cookies</a>
-                    </div> -->
+    <header>
+        <div id="cookies">
+            <button class="manage-consent-btn btn" type="button">Manage Consent</button>
+            <div id="cookies-consent">
+                <div class="cookie-container">
+                    <div class="cookie-title">
+                    <div class="cookie-btns">
+                        <!-- <div class="c-btn">
+                            <a href="#" class="btn contact">Change Settings</a>
+                        </div> -->
+                        <!-- <div class="c-btn">
+                            <a href="#" class="btn accept-cookies">Accept cookies</a>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="chat">
-        <button class="btn chat-btn" type="button">
-            <i class="fa-solid fa-message"></i>
-        </button>
-    </div>
+        <div class="chat">
+            <button class="btn chat-btn" type="button">
+                <i class="fa-solid fa-message"></i>
+            </button>
+        </div>
 
-    <!--============= HEADER =============-->
-    <div class="header-container">
-        <div class="container">
-            <div class="header-row">
-                <div class="header-logo">
-                    <a href="#">
-                        <img src="./img/netmatters-logo-header.png">
-                    </a>
-                </div>
-
-                <div class="menu-div">
-                    <div class="menu-phone">
+        <!--============= HEADER =============-->
+        <div class="header-container">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-logo">
                         <a href="#">
-                            <span>
-                                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
-                            </span>
+                            <img src="./img/netmatters-logo-header.png">
                         </a>
                     </div>
 
-                    <div class="menu-actions">
+                    <div class="menu-div">
+                        <div class="menu-phone">
+                            <a href="#">
+                                <span>
+                                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
 
-                        <a href="#" class="btn support">
-                            <span>
-                                <i class="fa-solid fa-computer-mouse" aria-hidden="true"></i>
-                            </span>
-                            Support
-                        </a>
+                        <div class="menu-actions">
 
-                        <a href="#" class="btn contact">
-                            <span>
-                                <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
-                            </span>
-                            Contact
-                        </a>
+                            <a href="#" class="btn support">
+                                <span>
+                                    <i class="fa-solid fa-computer-mouse" aria-hidden="true"></i>
+                                </span>
+                                Support
+                            </a>
 
-                        <div class="menu-search">
+                            <a href="#" class="btn contact">
+                                <span>
+                                    <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                                </span>
+                                Contact
+                            </a>
+
+                            <div class="menu-search">
+                                <form method="GET" action="#" accept-charset="UTF-8">
+                                    <label for="search-bar"></label>
+                                    <input type="text" id="search-bar" placeholder="Search...">
+                                    <button type="submit">
+                                        <span>
+                                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <button type="button" class="btn hamburger">
+                                <span class="ham-box">
+                                    <span class="ham-bar"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="search-mobile">
                             <form method="GET" action="#" accept-charset="UTF-8">
-                                <label for="search-bar"></label>
-                                <input type="text" id="search-bar" placeholder="Search...">
+                                <label for="search-mobile"></label>
+                                <input type="text" id="search-mobile" placeholder="Search..">
                                 <button type="submit">
                                     <span>
                                         <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
@@ -98,176 +116,380 @@ Span placeholders = Icons
                                 </button>
                             </form>
                         </div>
-
-                        <button type="button" class="btn hamburger">
-                            <span class="ham-box">
-                                <span class="ham-bar"></span>
-                            </span>
-                        </button>
-                    </div>
-                    <div class="search-mobile">
-                        <form method="GET" action="#" accept-charset="UTF-8">
-                            <label for="search-mobile"></label>
-                            <input type="text" id="search-mobile" placeholder="Search..">
-                            <button type="submit">
-                                <span>
-                                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                                </span>
-                            </button>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-        <!--============= NAVBAR =============-->
-        <div class="navigation">
-            <div class="container">
-                <ul class="main-nav">
-                    <li class="bespoke">
-                        <a><i class="fa-solid fa-laptop" aria-hidden="true"></i>
-                            <small>Bespoke</small>
-                            <span>Software</span>
-                        </a>
-                        <div class="dropdown">
-                            <ul class="container">
-                                <li class="drop-title">Our Bespoke Software Services</li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-gears" aria-hidden="true"></i>
-                                        <span>Bespoke CRM</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
-                                        <span>Business Automation</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
-                                        <span>Software Integrations</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
-                                        <span>Mobile App Development</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-folder" aria-hidden="true"></i>
-                                        <span>Bespoke Database</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-right-left" aria-hidden="true"></i>
-                                        <span>Sharepoint Development</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
-                                        <span>Operational Systems</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-users" aria-hidden="true"></i>
-                                        <span>Business Central Implementation</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-laptop" aria-hidden="true"></i>
-                                        <span>Internet of Things (IOT) Software</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-cloud" aria-hidden="true"></i>
-                                        <span>Intranet Development</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-cloud-arrow-down" aria-hidden="true"></i>
-                                        <span>Software Integrations</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-earth-europe" aria-hidden="true"></i>
-                                        <span>Reporting Hub</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="support">
-                        <a>
-                            <i class="fa-solid fa-desktop" aria-hidden="true"></i>
-                            <small>IT</small>
-                            <span>Support</span>
-                        </a>
-                        <div class="dropdown">
-                            <ul class="container">
-                                <li class="drop-title">Our IT Support Services</li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-headphones" aria-hidden="true"></i>
-                                        <span>Managed IT Support</span>
-                                    </a>
-                                </li>                             
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
-                                        <span>Business IT Support</span>
-                                    </a>
-                                </li>                                
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-laptop" aria-hidden="true"></i>
-                                        <span>Office 365 for Business</span>
-                                    </a>
-                                </li>                                
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
-                                        <span>IT Consultancy</span>
-                                    </a>
-                                </li>                                
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-cloud" aria-hidden="true"></i>
-                                        <span>Cloud Service Provider</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-hard-drive" aria-hidden="true"></i>
-                                        <span>Data Backup & Disaster Recovery</span>
-                                    </a>
-                                </li>   
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="marketing">
-                        <a href="#">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <small>Digital</small>
-                            <span>Marketing</span>
-                        </a>
-                    </li>
-                </ul>
+            <!--============= NAVBAR =============-->
+            <div class="navigation">
+                <div class="container">
+                    <ul class="main-nav">
+                        <li class="bespoke">
+                            <a href="#">
+                                <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+                                <small>Bespoke</small>
+                                <span>Software</span>
+                            </a>
+                            <div class="dropdown">
+                                <ul class="container">
+                                    <li class="drop-title">Our Bespoke Software Services</li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                                            <span>Bespoke CRM</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                                            <span>Business Automation</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
+                                            <span>Software Integrations</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                                            <span>Mobile App Development</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-folder" aria-hidden="true"></i>
+                                            <span>Bespoke Database</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                                            <span>Sharepoint Development</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                            <span>Operational Systems</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                                            <span>Business Central Implementation</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+                                            <span>Internet of Things (IOT) Software</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                                            <span>Intranet Development</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-cloud-arrow-down" aria-hidden="true"></i>
+                                            <span>Software Integrations</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-earth-europe" aria-hidden="true"></i>
+                                            <span>Reporting Hub</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="support">
+                            <a href="#">
+                                <i class="fa-solid fa-desktop" aria-hidden="true"></i>
+                                <small>IT</small>
+                                <span>Support</span>
+                            </a>
+                            <div class="dropdown">
+                                <ul class="container">
+                                    <li class="drop-title">Our IT Support Services</li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-headphones" aria-hidden="true"></i>
+                                            <span>Managed IT Support</span>
+                                        </a>
+                                    </li>                             
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                                            <span>Business IT Support</span>
+                                        </a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+                                            <span>Office 365 for Business</span>
+                                        </a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                            <span>IT Consultancy</span>
+                                        </a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                                            <span>Cloud Service Provider</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-hard-drive" aria-hidden="true"></i>
+                                            <span>Data Backup & Disaster Recovery</span>
+                                        </a>
+                                    </li>   
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="marketing">
+                            <a href="#">
+                                <i class="fa-solid fa-chart-simple" aria-hidden="true"></i>
+                                <small>Digital</small>
+                                <span>Marketing</span>
+                            </a>
+                            <div class="dropdown">
+                                <ul class="container">
+                                    <li class="drop-title">Our Digital Marketing Services</li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                            <span>Search Engine Optimisation (SEO)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-money-bill-1" aria-hidden="true"></i>
+                                            <span>Pay Per Click Advertising (PPC)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i>
+                                            <span>Conversion Rate Optimisation (CRO)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                            <span>Email Marketing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                                            <span>Social Media Marketing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-pen" aria-hidden="true"></i>
+                                            <span>Content Marketing</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="telecoms">
+                            <a href="#">
+                                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                                <small>Telecoms</small>
+                                <span>Services</span>
+                            </a>
+                            <div class="dropdown">
+                                <ul class="container">
+                                    <li class="drop-title">Our Telecom Services</li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-ticket" aria-hidden="true"></i>
+                                            <span>Business Mobile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                            <span>Hosted VoIP Provider</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-square-mobile" aria-hidden="true"></i>
+                                            <span>Business VoIP System</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-gauge" aria-hidden="true"></i>
+                                            <span>Business Broadband</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                                            <span>Leased Lines Provider</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                                            <span>3CX Systems</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="web">
+                            <a>
+                                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                                <small>Web</small>
+                                <span>Design</span>
+                            </a>
+                            <div class="dropdown">
+                                <ul class="container">
+                                    <li class="drop-title">Our Web Design Services</li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-pencil" aria-hidden="true"></i>
+                                            <span>Bespoke Website Design</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-shopping-cart fa-flip-horizontal" aria-hidden="true"></i>
+                                            <span>eCommerce Website Design</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-display" aria-hidden="true"></i>
+                                            <span>Pay Monthly Websites</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+                                            <span>Branding & Design</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                                            <span>Mobile App Development</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                                            <span>Web Hosting </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="cyber">
+                            <a href="#">
+                                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                                <small>Cyber</small>
+                                <span>Security</span>
+                            </a>
+                            <div class="dropdown">
+                                <ul class="container">
+                                    <li class="drop-title">Our Cyber Security Services</li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-paste" aria-hidden="true"></i>
+                                            <span>Cyber Security Assessment</span>
+                                        </a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                                            <span>Cyber Security Management</span>
+                                        </a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-flask" aria-hidden="true"></i>
+                                            <span>Cyber Penetration Testing</span>
+                                        </a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                            <span>Cyber Essentials Certification</span>
+                                        </a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                                            <span>PCI Compliance</span>
+                                        </a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                                            <span>Hacking Prevention </span>
+                                        </a>
+                                    </li>                                
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="developer">
+                            <a href="#">
+                                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                <small>Developer</small>
+                                <spans>Course</spans>
+                            </a>
+                            <div class="dropdown">
+                                <ul class="container">
+                                    <li class="drop-title">Our Developer Course Services</li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+                                            <span>Train For A Careeer In Tech</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-code" aria-hidden="true"></i>
+                                            <span>Skills Bootcamp</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+                                            <span>Scion Scheme Frequently Asked Questions</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                                            <span>Scion Collaborators</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        
+    </header>
 <!--============= BANNER =============-->
     <section id=page-banner>
         <div class="banner">
@@ -420,31 +642,28 @@ Span placeholders = Icons
     <div class="section">
         <div class="accreds-slide">
             <div class="outer">
-                <div class="slide-1">
-                    <div class="logo-badge">
+                    <div class="logo-badge1">
                         <img src="./img/accreds/google-partner.webp">
                     </div>
-                </div>
-                <div class="slide-2">
-                    <div class="logo-badge">
+
+                    <div class="logo-badge2">
                         <img src="./img/accreds/living_wage.webp">
                     </div>
-                </div>
-                <div class="slide-3">
-                    <div class="logo-badge">
+
+
+                    <div class="logo-badge3">
                         <img src="./img/accreds/norfolk_prohelp.webp">
                     </div>
-                </div>
-                <div class="slide-4">
-                    <div class="logo-badge">
+
+
+                    <div class="logo-badge4">
                         <img src="./img/accreds/investing-in-future-growth.webp">
                     </div>
-                </div>
-                <div class="slide-5">
-                    <div class="logo-badge">
-                        <img src="./img/accreds/norfolk-carbon-charter.webp"
+
+
+                    <div class="logo-badge5">
+                        <img src="./img/accreds/norfolk-carbon-charter.webp">
                     </div>
-                </div>
             </div>
         </div>
     </div>

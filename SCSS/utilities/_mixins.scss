@@ -63,3 +63,18 @@
     top: -10px;
     transition: .5s ease;
 }
+
+// Nav arrow bar mixin
+
+@mixin arrow-nav($brdwidth, $brdcol){
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    transform: translateX(-50%);
+    z-index: 90;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $brdwidth;
+    border-color: $brdcol transparent transparent;
+}

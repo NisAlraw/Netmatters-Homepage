@@ -1,0 +1,190 @@
+.navigation {
+    position: relative;
+    background-color: $dark-txt;
+
+    ul.main-nav {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+
+        & > li {
+            text-align: center;
+            list-style: none;
+            &:hover{cursor: pointer;}
+        } 
+
+        & > a {
+            display: block;
+            color: #fff;
+            line-height: 1;
+            padding: 19px 0 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:not(i, small){
+                font-size: 1.125rem;
+            }
+
+            i {
+                display: block;
+                font-size: 1.23rem;
+                padding-bottom: 10px;
+            }
+
+            small {
+                display: block;
+                font-size: .625rem;
+                padding-bottom: 1px;
+            }
+        }
+
+        //List Icon Colors
+
+        &.soft > a > i {color: $nav-software;}
+        &.support > a > i {color: $nav-it;}
+        &.marketing > a > i {color: $nav-digital;}
+        &.telecoms > a > i {color: $nav-telecom;}
+        &.web > a > i {color: $nav-webdesign;}
+        &.cyber > a > i {color: $nav-cyber;}
+        &.developer > a > i {color: $nav-developer;}
+
+        //List Icon & Hover BG colors
+
+        &.soft:hover, &.soft:hover, > a > i {@include btn-style($nav-software-drk, $nav-software-drk);}
+        &.support:hover, &.support:hover > a > i {@include btn-style($nav-it-drk, $nav-it-drk);}
+        &.digital:hover, &.digital:hover > a > i {@include btn-style($nav-digital-drk, $nav-digital-drk);}
+        &.telecoms:hover, &.telecoms:hover > a > i {@include btn-style($nav-telecom-drk, $nav-telecom-drk);}
+        &.web:hover, &.web:hover > a > i {@include btn-style($nav-webdesign-drk, $nav-webdesign-drk);}
+        &.cyber:hover, &.cyber:hover > a > i {@include btn-style($nav-cyber-drk, $nav-cyber-drk);}
+        &.developer:hover, &.developer:hover > a > i {@include btn-style($nav-developer-drk, $nav-developer-drk);}
+
+        //List Item Hover Nav Arrow
+        &.soft:hover > a::before {
+            @media (max-width: 1259px){
+                @include arrow-nav($brdwidth:$nav-arrow--l, $brdcol:$nav-software)
+            }
+            @include mq(x-large){
+                @include arrow-nav($brdwidth: $nav-arrow--xl, $brdcol: $nav-software)
+            }
+        }
+
+        &.support:hover > a:before {
+            @media (max-width: 1259px){
+                @include arrow-nav($brdwidth: $nav-arrow--l, $brdcol: $nav-it)
+            }
+            @include mq(x-large){
+                @include arrow-nav($brdwidth: $nav-arrow--xl, $brdcol: $nav-it)
+            }
+        }
+
+        &.marketing:hover > a:before {
+            @media (max-width: 1259px){
+                @include arrow-nav($brdwidth: $nav-arrow--l, $brdcol: $nav-digital)
+            }
+            @include mq(x-large){
+                @include arrow-nav($brdwidth:$nav-arrow--xl, $brdcol: $nav-digital)
+            }
+        }
+
+        &.telecoms:hover > a:before {
+            @media (max-width: 1259px){
+                @include arrow-nav($brdwidth: $nav-arrow--l, $brdcol: $nav-telecom)
+            }
+            @include mq(x-large){
+                @include arrow-nav($brdwidth: $nav-arrow--xl, $brdcol: $nav-telecom)
+            }
+        }
+
+        &.web:hover > a:before {
+            @media (max-width: 1259px){
+                @include arrow-nav($brdwidth: $nav-arrow--l, $brdcol: $nav-webdesign)
+            }
+            @include mq(x-large){
+                @include arrow-nav($brdwidth: $nav-arrow--xl, $brdcol: $nav-webdesign)
+            }
+        }
+
+        &.cyber:hover > a:before {
+            @media (max-width: 1259px){
+                @include arrow-nav($brdwidth: $nav-arrow--l, $brdcol: $nav-cyber)
+            }
+            @include mq(x-large){
+                @include arrow-nav($brdwidth: $nav-arrow--xl, $brdcol: $nav-cyber)
+            }
+        }
+
+        &.dev:hover > a:before {
+            @media (max-width: 1259px){
+                @include arrow-nav($brdwidth: $nav-arrow--l, $brdcol: $nav-developer)
+            }
+            @include mq(x-large){
+                @include arrow-nav($brdwidth: $nav-arrow--xl, $brdcol: $nav-developer)
+            }
+        }
+    }
+}
+
+// Dropdown Menu
+
+.navigation ul.main-nav {
+    & > div.dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 100%;
+        margin: 0;
+        z-index: 10;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #1d1f28;
+
+        & > ul.container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: -15px;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+
+            & > li.drop-title {
+                margin-top: 15px;
+                margin-bottom: 10px;
+                font-size: 2rem;
+                font-weight: 500;
+                color: #fff !important;
+                width: 100%;
+            }
+
+            & > li {
+                width: 33%;
+                margin-top: 15px;
+
+                & > a {
+                    color: #fff !important;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    line-height: 1.313rem;
+                    padding: 10px 15px 10px 0;
+
+                    & > span:hover {text-decoration: underline;}
+
+                    & > i {
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        min-width: 25px;
+                    }
+
+                    & > span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
