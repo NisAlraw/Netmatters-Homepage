@@ -270,6 +270,11 @@ a {
   position: relative;
   background-color: #333645;
 }
+@media (max-width: 992px) {
+  .navigation {
+    display: none;
+  }
+}
 .navigation ul.main-nav {
   margin: 0;
   padding: 0;
@@ -277,13 +282,13 @@ a {
   grid-template-columns: repeat(7, 1fr);
 }
 .navigation ul.main-nav > li {
-  text-align: center;
   list-style: none;
+  text-align: center;
 }
-.navigation ul.main-nav > li:hover {
+.navigation ul.main-nav > li :hover {
   cursor: pointer;
 }
-.navigation ul.main-nav > a {
+.navigation ul.main-nav > li > a {
   display: block;
   color: #fff;
   line-height: 1;
@@ -291,20 +296,20 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
-.navigation ul.main-nav > a:not(i, small) {
+.navigation ul.main-nav > li > a:not(i, small) {
   font-size: 1.125rem;
 }
-.navigation ul.main-nav > a i {
+.navigation ul.main-nav > li > a i {
   display: block;
   font-size: 1.23rem;
   padding-bottom: 10px;
 }
-.navigation ul.main-nav > a small {
+.navigation ul.main-nav > li > a small {
   display: block;
   font-size: 0.625rem;
   padding-bottom: 1px;
 }
-.navigation ul.main-nav.soft > a > i {
+.navigation ul.main-nav.bespoke > a > i {
   color: #67809f;
 }
 .navigation ul.main-nav.support > a > i {
@@ -322,22 +327,22 @@ a {
 .navigation ul.main-nav.cyber > a > i {
   color: #f62459;
 }
-.navigation ul.main-nav.developer > a > i {
+.navigation ul.main-nav.dev > a > i {
   color: #ce4125;
 }
-.navigation ul.main-nav.soft:hover, .navigation ul.main-nav.soft:hover, .navigation ul.main-nav > a > i {
-  background-color: #526781;
+.navigation ul.main-nav.bespoke:hover, .navigation ul.main-nav.bespoke:hover > a > i {
+  background-color: #67809f;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.navigation ul.main-nav.soft:hover:hover, .navigation ul.main-nav.soft:hover:hover, .navigation ul.main-nav > a > i:hover {
-  background-color: #526781;
+.navigation ul.main-nav.bespoke:hover:hover, .navigation ul.main-nav.bespoke:hover > a > i:hover {
+  background-color: #67809f;
 }
 .navigation ul.main-nav.support:hover, .navigation ul.main-nav.support:hover > a > i {
-  background-color: #286abd;
+  background-color: #4183d7;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -345,21 +350,21 @@ a {
   transition: background-color 0.3s ease;
 }
 .navigation ul.main-nav.support:hover:hover, .navigation ul.main-nav.support:hover > a > i:hover {
-  background-color: #286abd;
+  background-color: #4183d7;
 }
-.navigation ul.main-nav.digital:hover, .navigation ul.main-nav.digital:hover > a > i {
-  background-color: #25a25a;
+.navigation ul.main-nav.marketing:hover, .navigation ul.main-nav.marketing:hover > a > i {
+  background-color: #2ecc71;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.navigation ul.main-nav.digital:hover:hover, .navigation ul.main-nav.digital:hover > a > i:hover {
-  background-color: #25a25a;
+.navigation ul.main-nav.marketing:hover:hover, .navigation ul.main-nav.marketing:hover > a > i:hover {
+  background-color: #2ecc71;
 }
 .navigation ul.main-nav.telecoms:hover, .navigation ul.main-nav.telecoms:hover > a > i {
-  background-color: #bc2c28;
+  background-color: #d64541;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -367,10 +372,10 @@ a {
   transition: background-color 0.3s ease;
 }
 .navigation ul.main-nav.telecoms:hover:hover, .navigation ul.main-nav.telecoms:hover > a > i:hover {
-  background-color: #bc2c28;
+  background-color: #d64541;
 }
 .navigation ul.main-nav.web:hover, .navigation ul.main-nav.web:hover > a > i {
-  background-color: #79539a;
+  background-color: #926fb1;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -378,32 +383,32 @@ a {
   transition: background-color 0.3s ease;
 }
 .navigation ul.main-nav.web:hover:hover, .navigation ul.main-nav.web:hover > a > i:hover {
-  background-color: #79539a;
+  background-color: #926fb1;
 }
-.navigation ul.main-nav.cyber:hover, .navigation ul.main-nav.cyber:hover > a > i {
-  background-color: #de093f;
+.navigation ul.main-nav.cyber:hover, .navigation ul.main-navcyber:hover > a > i {
+  background-color: #f62459;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.navigation ul.main-nav.cyber:hover:hover, .navigation ul.main-nav.cyber:hover > a > i:hover {
-  background-color: #de093f;
+.navigation ul.main-nav.cyber:hover:hover, .navigation ul.main-navcyber:hover > a > i:hover {
+  background-color: #f62459;
 }
-.navigation ul.main-nav.developer:hover, .navigation ul.main-nav.developer:hover > a > i {
-  background-color: #a9321d;
+.navigation ul.main-nav.dev:hover, .navigation ul.main-nav.dev:hover > a > i {
+  background-color: #ce4125;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.navigation ul.main-nav.developer:hover:hover, .navigation ul.main-nav.developer:hover > a > i:hover {
-  background-color: #a9321d;
+.navigation ul.main-nav.dev:hover:hover, .navigation ul.main-nav.dev:hover > a > i:hover {
+  background-color: #ce4125;
 }
 @media (max-width: 1259px) {
-  .navigation ul.main-nav.soft:hover > a::before {
+  .navigation ul.main-nav.bespoke:hover > a:before {
     content: "";
     position: absolute;
     bottom: -35px;
@@ -417,7 +422,7 @@ a {
   }
 }
 @media (min-width: 1260px) {
-  .navigation ul.main-nav.soft:hover > a::before {
+  .navigation ul.main-nav.bespoke:hover > a:before {
     content: "";
     position: absolute;
     bottom: -35px;
@@ -599,59 +604,87 @@ a {
   }
 }
 
-.navigation ul.main-nav > div.dropdown {
+.navigation ul.main-nav > li > div.dropdown {
+  margin: 0;
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   min-width: 100%;
-  margin: 0;
   z-index: 10;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #1d1f28;
 }
-.navigation ul.main-nav > div.dropdown > ul.container {
+.navigation ul.main-nav > li > div.dropdown > ul.container {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-top: -15px;
-  padding: 0;
   list-style: none;
   text-align: left;
 }
-.navigation ul.main-nav > div.dropdown > ul.container > li.drop-title {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fff !important;
+.navigation ul.main-nav > li > div.dropdown > ul.container > li.drop-title {
   width: 100%;
+  color: #fff !important;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 2rem;
 }
-.navigation ul.main-nav > div.dropdown > ul.container > li {
+.navigation ul.main-nav > li > div.dropdown > ul.container > li {
   width: 33%;
   margin-top: 15px;
 }
-.navigation ul.main-nav > div.dropdown > ul.container > li > a {
-  color: #fff !important;
+.navigation ul.main-nav > li > div.dropdown > ul.container > li > a {
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   font-size: 1.2rem;
   line-height: 1.313rem;
-  padding: 10px 15px 10px 0;
+  padding: 0.625rem 0.938rem 0.625rem 0;
 }
-.navigation ul.main-nav > div.dropdown > ul.container > li > a > span:hover {
+.navigation ul.main-nav > li > div.dropdown > ul.container > li > a > span:hover {
   text-decoration: underline;
 }
-.navigation ul.main-nav > div.dropdown > ul.container > li > a > i {
+.navigation ul.main-nav > li > div.dropdown > ul.container > li > a > i {
   display: flex;
   justify-content: left;
   align-items: center;
   min-width: 25px;
 }
-.navigation ul.main-nav > div.dropdown > ul.container > li > a > span {
+.navigation ul.main-nav > li > div.dropdown > ul.container > li > a > span {
   margin-left: 10px;
+}
+.navigation ul.main-nav > li.bespoke:hover > div.dropdown {
+  display: block;
+  background-color: #526781;
+}
+.navigation ul.main-nav > li.support:hover > div.dropdown {
+  display: block;
+  background-color: #286abd;
+}
+.navigation ul.main-nav > li.marketing:hover > div.dropdown {
+  display: block;
+  background-color: #25a25a;
+}
+.navigation ul.main-nav > li.telecoms:hover > div.dropdown {
+  display: block;
+  background-color: #bc2c28;
+}
+.navigation ul.main-nav > li.web:hover > div.dropdown {
+  display: block;
+  background-color: #79539a;
+}
+.navigation ul.main-nav > li.cyber:hover > div.dropdown {
+  display: block;
+  background-color: #de093f;
+}
+.navigation ul.main-nav > li.dev:hover > div.dropdown {
+  display: block;
+  background-color: #a9321d;
 }
 
 footer {
