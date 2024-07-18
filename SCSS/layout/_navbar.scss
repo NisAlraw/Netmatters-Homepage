@@ -57,63 +57,6 @@
         &.web:hover, &.web:hover > a > i {@include btn-style($nav-webdesign, $nav-webdesign);}
         &.cyber:hover, &cyber:hover > a > i {@include btn-style($nav-cyber, $nav-cyber);}
         &.dev:hover, &.dev:hover > a > i {@include btn-style($nav-developer, $nav-developer);}
-
-        &.bespoke:hover > a:before {
-            @media (max-width: 1259px) {
-                @include arrow-nav($brdwidth:$nav-arrow--l, $brdcol: $nav-software)
-            }
-            @include mq(x-large) {
-                @include arrow-nav($brdwidth:$nav-arrow--xl, $brdcol: $nav-software)
-            }
-        }
-        &.support:hover > a:before {
-            @media (max-width: 1259px) {
-                @include arrow-nav($brdwidth:$nav-arrow--l, $brdcol: $nav-it)
-            }
-            @include mq(x-large) {
-                @include arrow-nav($brdwidth:$nav-arrow--xl, $brdcol: $nav-it)
-            }
-        }
-        &.marketing:hover > a:before {
-            @media (max-width: 1259px) {
-                @include arrow-nav($brdwidth:$nav-arrow--l, $brdcol: $nav-digital)
-            }
-            @include mq(x-large) {
-                @include arrow-nav($brdwidth:$nav-arrow--xl, $brdcol: $nav-digital)
-            }
-        }
-        &.telecoms:hover > a:before {
-            @media (max-width: 1259px) {
-                @include arrow-nav($brdwidth:$nav-arrow--l, $brdcol: $nav-telecom)
-            }
-            @include mq(x-large) {
-                @include arrow-nav($brdwidth:$nav-arrow--xl, $brdcol: $nav-telecom)
-            }
-        }
-        &.web:hover > a:before {
-            @media (max-width: 1259px) {
-                @include arrow-nav($brdwidth:$nav-arrow--l, $brdcol: $nav-webdesign)
-            }
-            @include mq(x-large) {
-                @include arrow-nav($brdwidth:$nav-arrow--xl, $brdcol: $nav-webdesign)
-            }
-        }
-        &.cyber:hover > a:before {
-            @media (max-width: 1259px) {
-                @include arrow-nav($brdwidth:$nav-arrow--l, $brdcol: $nav-cyber)
-            }
-            @include mq(x-large) {
-                @include arrow-nav($brdwidth:$nav-arrow--xl, $brdcol: $nav-cyber)
-            }
-        }
-        &.dev:hover > a:before {
-            @media (max-width: 1259px) {
-                @include arrow-nav($brdwidth:$nav-arrow--l, $brdcol: $nav-developer)
-            }
-            @include mq(x-large) {
-                @include arrow-nav($brdwidth:$nav-arrow--xl, $brdcol: $nav-developer)
-            }
-        }
     }
 }
 
