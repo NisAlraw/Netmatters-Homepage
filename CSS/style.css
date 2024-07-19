@@ -656,6 +656,57 @@ footer .footer-rows .footer-list ul.footer-ul li a:hover {
   }
 }
 
+#about {
+  display: flex;
+  flex-direction: row;
+  background-color: #333645;
+  color: #fff;
+}
+#about .about-main-container {
+  margin-bottom: 25px;
+  line-height: 1.875rem;
+  width: 70%;
+}
+#about .about-main-container div {
+  width: 50%;
+}
+#about .about-main-container div h2 {
+  font-size: 2.25rem;
+  color: #fff;
+  font-weight: 600;
+}
+#about .about-main-container div p {
+  font-size: 1rem;
+}
+#about .about-main-container div p {
+  margin: 0 0 10px;
+}
+#about .about-main-container div p strong {
+  color: #fff;
+  font-size: 1rem;
+}
+#about .about-main-container div p strong a {
+  text-decoration: none;
+  color: #fff;
+}
+#about .about-main-container div p strong a a:hover {
+  text-decoration: underline;
+}
+#about .about-main-container div p strong a a:visited {
+  color: #fff;
+}
+#about .about-main-container div p strong a a:active {
+  color: #fff;
+}
+#about .about-main-container div span i {
+  color: goldenrod;
+  font-size: 3.125rem;
+}
+#about .about-main-container div big {
+  font-size: 1.875rem;
+  width: 50%;
+}
+
 #cookies div.cookies button.manage-consent.btn {
   left: 0;
   bottom: 0;

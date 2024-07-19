@@ -63,3 +63,69 @@
     top: -10px;
     transition: .5s ease;
 }
+
+@mixin about-txt {
+    margin-bottom: 25px;
+    line-height: 1.875rem;
+    width: 70%;
+    
+    div {
+        width: 50%;
+        h2{
+            font-size: 2.25rem;
+            color: #fff;
+            font-weight: 600;
+        }
+    
+        p {
+            font-size: 1rem;
+            & {
+                margin: 0 0 10px;
+            }
+            strong {
+                color: #fff;
+                font-size: 1rem;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                    a:visited {
+                        color: #fff;
+                    }
+                    a:active {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    div {
+        span {
+            i {
+                color: goldenrod;
+                font-size: 3.125rem;
+            }
+        }
+        big {
+            font-size: 1.875rem;
+            width: 50%;
+        }
+    }
+
+}
+
+@mixin about-div-btn {
+    a {
+        color: #fff;
+        background-color: $dark-btn;
+        padding: 10px 30px;
+        border-radius: 6px;
+        font-size: 1.25rem;
+        &:hover {
+            background-color: darken($dark-btn, 8%);
+        }
+    }
+}

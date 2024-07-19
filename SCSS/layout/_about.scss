@@ -1,0 +1,9 @@
+#about {
+    display: flex;
+    flex-direction: row;
+    background-color: $dark-txt;
+    color: #fff;
+    .about-main-container {
+        @include about-txt
+    }
+}
