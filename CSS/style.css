@@ -1039,10 +1039,12 @@ footer .footer-rows .footer-list ul.footer-ul li a:hover {
 .accreds-slide {
   display: flex;
   gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
+}
+.accreds-slide img {
   filter: grayscale(100%);
 }
-.accreds-slide:hover {
+.accreds-slide img:hover {
   filter: grayscale(0%);
 }
 

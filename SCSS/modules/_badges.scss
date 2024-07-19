@@ -1,10 +1,12 @@
 .accreds-slide {
     display: flex;
     gap: 40px;
-    justify-content: center;
-    filter: grayscale(100%);
+    justify-content: space-between;
+    img {
+        filter: grayscale(100%);
 
-    &:hover {
-        filter: grayscale(0%);
+        &:hover {
+            filter: grayscale(0%);
+        }
     }
 }
